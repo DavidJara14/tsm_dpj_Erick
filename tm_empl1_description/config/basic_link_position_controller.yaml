@@ -1,0 +1,6 @@
+controller_manager:
+  ros_controller:
+    update_rate: 100 #Hz
+
+  basic_position:controller:
+    type: forward_controller/ForwardCommandController
