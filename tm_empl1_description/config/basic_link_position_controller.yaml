@@ -2,5 +2,14 @@ controller_manager:
   ros_controller:
     update_rate: 100 #Hz
 
-  basic_position:controller:
+  basic_position_controller:
     type: forward_controller/ForwardCommandController
+
+  joint_state_broadcaster:
+    type: joint_state_broadcaster/JointStateBroadcaster
+
+basic_position_controller:
+  ros_parameters:
+    joints:
+      - base_link_to_link_1_joint
+    interface_name: position
