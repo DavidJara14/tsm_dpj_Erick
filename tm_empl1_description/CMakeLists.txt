@@ -12,8 +12,8 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 install(
-DIRECTORY launch rviz urdf  
-DESTINATION share/${PROJECT_NAME}/
+  DIRECTORY launch rviz urdf  
+  DESTINATION share/${PROJECT_NAME}/
 )
 
 ament_package()

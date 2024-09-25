@@ -4,6 +4,7 @@
 <!--Aqui comineza el robot-->
 
 <robot name="basic_link" >
+
     <link name="base_link">
         <visual>
             <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />

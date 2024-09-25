@@ -7,8 +7,10 @@
 
     <link name="world">
     </link>
-    <joint name="world_to_baselink" type="fix">
-        <origin xyz="0 0 0.15" rpy="0 0 0"/>
+    <joint name="world_to_baselink" type="fixed">
+        <parent link="world" />
+        <child link="base_link" />
+        <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint>
 
     <link name="base_link">
